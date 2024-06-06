@@ -5,6 +5,8 @@
 1.首先，包clone或下载到本地
 
 2.在文件夹中创建一个名字叫temp的文件夹。
+![image](https://github.com/ccccler/shutan--/assets/127079609/ba1e03c5-b121-4986-b93f-f796c923db2d)
+
 
 3.安装包：
 在terminal内，运行
