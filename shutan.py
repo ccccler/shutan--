@@ -69,7 +69,7 @@ class Shutan():
 
         titems = f"{items}\n"
 
-        filename = "./temp3/items_save"
+        filename = "./temp/items_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(titems)
         print("item已保存")
