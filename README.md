@@ -4,6 +4,11 @@
 # 使用方法
 首先，创建一个名字叫temp的文件夹。
 
+安装包：
+在terminal内，运行
+```
+pip install -r requirements.txt
+
 在main.py文件中，实例化Run，调用内部的y函数，按照案例替换数据即可
 
 # API更换
