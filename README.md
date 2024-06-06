@@ -2,15 +2,19 @@
 一个以LIDA架构为基础的数据可视化与分析AIGC系统
 
 # 使用方法
-首先，创建一个名字叫temp的文件夹。
+1.首先，包clone或下载到本地
 
-安装包：
+2.在文件夹中创建一个名字叫temp的文件夹。
+
+3.安装包：
 在terminal内，运行
 ```
 pip install -r requirements.txt
 ```
 
-在main.py文件中，实例化Run，调用内部的y函数，按照案例替换数据即可
+5.在config.py文件中，更换自己API的base_url和api
+
+4.在main.py文件中，实例化Run，调用内部的y函数，按照案例替换数据即可
 ```
     input_data=''' '''
 
@@ -25,5 +29,4 @@ pip install -r requirements.txt
     run_instance.y(input_data,background,shenfen,style,None)
 ```
 
-# API更换
-在config.py文件中，更换自己API的base_url和api
+
