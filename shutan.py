@@ -134,7 +134,7 @@ class Shutan():
 
         tformat = f"{format_data}\n"
 
-        filename = "./temp3/data_save"
+        filename = "./temp/data_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(tformat)
         print("data已保存")
@@ -189,7 +189,7 @@ class Shutan():
 
         tgoals = f"{goals}\n"
 
-        filename = "./temp3/goals_save"
+        filename = "./temp/goals_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(tgoals)
         print("goal已保存")
@@ -264,7 +264,7 @@ class Shutan():
 
         tanalysis = f"{analysis_list}\n"
 
-        filename = "./temp3/ana_save"
+        filename = "./temp/ana_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(tanalysis)
         print("anal已保存")
@@ -366,7 +366,7 @@ class Shutan():
 
         tcodelist = f"{code_list}\n"
 
-        filename = "./temp3/vis_save"
+        filename = "./temp/vis_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(tcodelist)
         print("vis已保存")
@@ -427,7 +427,7 @@ class Shutan():
 
         toutput = f"{output}\n"
 
-        filename = f"./temp2/news_save"
+        filename = f"./temp/news_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(toutput)
         print("news已保存")
@@ -480,7 +480,7 @@ class Shutan():
 
         url = ss.data[0].url
 
-        filename = "./temp2/url_save"
+        filename = "./temp/url_save"
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(url)
         print("插图url已保存")
