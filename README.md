@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 5.在config.py文件中，更换自己API的base_url和api
 
-4.在main.py文件中，实例化Run，调用内部的y函数，按照案例替换数据即可
+4.在main.py文件中，实例化Run，调用内部的y函数，按照案例替换数据即可。最终生成的结果是一个Markdown文件，包括转化过的数据、数据描述、数据分析和可视化、以及数据报告
 ```
     input_data=''' '''
 
