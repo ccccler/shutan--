@@ -22,8 +22,10 @@ pip install -r requirements.txt
 
     background=""
 
+    # 此处身份从character当中的模板选择
     shenfen="government_client"
 
+    # 此处style从 LIGHT/DARK/CHALK/ESSOS/INFOGRAPHIC/MACARONS/ROMA/ROMANTIC/SHINE/WALDEN/WONDERLAND 中选择
     style="LIGHT"
 
     run_instance = Run()
@@ -44,4 +46,34 @@ pip install -r requirements.txt
     }
 ```
 
+6.如果想修改图表要求，实例化Repair类，调用里面的visre函数。输入修改要求，从缓存文件夹中读取旧表格，序号是说明要修改第几个图
+```
+    r=Repair()
 
+    repair_input="请使用ESSOS主题，替换原来的主题。并用Line图对其进行表示。"
+
+    path="./temp/vis_save"
+
+    r.visre(1,repair_input,path)
+```
+
+7. 如果想新增分析和可视化，读取缓存文件夹中的原始数据，调用Repar类里面的anavisre函数。输入身份、新问题和数据背景
+```
+    question="行业平均工资排行前5的行业有哪些？他们普遍有什么特征？"
+
+    data_path="./temp/data_save"
+
+    r.anavisre(data_path,shenfen,question,background)
+```
+
+9. 如果想修改最终报告，读取缓存文件夹中的原始报告，结构化的数据，原始AI图片的URL。调用Repair类里的newsre函数，输入各参数
+```
+    with open('./temp2/url_save', 'r', encoding='utf-8') as file:
+        url = file.read()
+
+    new_path="./temp2/news_save"
+
+    new_input="请你把这段文字修改成新闻稿形式的，不要现在这样发言稿类型的。以新闻稿的形式来总结"
+
+    r.newsre(background,shenfen,new_path,new_input,data,url)
+```
